@@ -1,0 +1,67 @@
+{% extends 'base/base_generic.html' %}
+
+{% block link %}
+{% load staticfiles %}
+<!-- Bootstrap core CSS -->
+<link href="{% static 'base/vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'base/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'base/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+
+<!-- Custom styles for this template -->
+<link href="{% static 'base/css/modern-business.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+{% endblock link %}
+
+
+{% block body %}
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-orange">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'base/img/loogo.png' %}" id="logo"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about_isca' %}">회사 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'schedule_2019' %}">교육 과정</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">문의</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- content(본문내용) -->
+{% block content %}
+{% endblock content %}
+
+
+<!-- Footer -->
+<footer class="footer bg-orange">
+  <div class="container">
+      <p class="m-0" style="color: rgba(255, 255, 255, 0.75); text-align: center; font-size: 12px;">
+        ISCA<br>
+        대표자 : 최은식<br>
+        주소 : 서울 구로구 디지털로 33길 27 삼성IT밸리 309호<br>
+        전화 : 02-2106-8840
+        팩스 : 02-2106-8842
+      </p>
+  </div>
+</footer>
+  
+
+
+{% endblock body %}

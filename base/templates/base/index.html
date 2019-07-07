@@ -1,0 +1,96 @@
+{% extends 'base/navbar.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('{% static "base/img/main1.jpg" %}')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>ISCA</h3>
+          <p>ISCA의 교육과정들은 기술적 접근, 핵심 부속서,<br>경영 시스템 표준 및 고객 맞춤 솔루션과 환경 및 안전보건에 중점을 두고 있습니다</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('{% static "base/img/main2.jpg" %}')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>ISCA</h3>
+          <p>ISCA 는 뛰어난 전문성과 경험을 바탕으로<br>경영시스템 및 자동차산업 전반에 대한 다양한 교육 프로그램을 제공하고 있습니다.</p>
+        </div>
+      </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</header>
+
+<!-- Page Content -->
+<div class="container"><br><br>
+  <div>
+    <h1 class="mainpage-title">ISCA에서는 아래와 같은 교육과정을 제공합니다</h1>
+    <hr>
+  </div>
+  <div class="row main-row" id="main-row">
+    <div class="col-md-3 mb-5">
+      <div>
+        <div class="card-body">
+          <h4 class="card-title">경영시스템 교육과정<br>(품질, 환경, 안전)</h4>
+          <ul style="padding-left: 20px;">
+            <li>ISO 9001 품질시스템</li>
+            <li>ISO 14001 환경시스템</li>
+            <li>ISO 4001 안전보건시스템</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-5">
+      <div>
+        <div class="card-body">
+          <h4 class="card-title" style="margin-top: 16px; margin-bottom: 17px;">내부심사원 과정<br></h4>
+          <ul style="padding-left: 20px;">
+            <li>ISO 9001 품질시스템</li>
+            <li>ISO 14001 환경시스템</li>
+            <li>ISO 45001 안전보건시스템</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-5">
+      <div>
+        <div class="card-body" style="padding-top: 14px;">
+          <h4 class="card-title">자동차산업<br>경영시스템 교육과정</h4>
+          <ul style="padding-left: 20px;">
+            <li>IATF 16949 이해</li>
+            <li>IATF 16949 내부심사원 과정</li>
+            <li>고객요구사항의 이해</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-5">
+      <div>
+        <div class="card-body" style="padding-top: 14px;">
+          <h4 class="card-title" style="margin-top: 16px; margin-bottom: 17px;">핵심부속서 과정</h4>
+          <ul style="padding-left: 20px;">
+            <li>CORE TOOL 이해와 업무</li>
+            <li>APQP</li>
+            <li>FMEA</li>
+            <li>MSA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}
