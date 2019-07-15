@@ -24,9 +24,9 @@ BASE_DIR = dirname(dirname(dirname(abspath(__file__))))
 SECRET_KEY = '0j3*t!q5ipm3ccvx3wjzwq^y2e=ie+3*ipd6^cvxl_!ce0=3bv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['isca.or.kr']
 
 
 # Application definition
